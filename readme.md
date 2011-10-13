@@ -49,7 +49,7 @@ In Nancy the CMS content serving is easy to setup with just a module like this:
 
 The DocumentNodeByUrl retrives the node at the requested Url.
 
-That's all there is to it to make it work. You will get an admin interface where you can edit your nodes.
+That's all there is to it to make it work. The module for the Admin UI is included in the core dll.
 
 
 Defining settings in Nancy
