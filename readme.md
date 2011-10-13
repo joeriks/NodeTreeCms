@@ -1,6 +1,10 @@
 NodeTreeCms - version 0.1
 =========================
 
+Really basic CMS with the goal is to have a one dll to drop into a WebPages or Nancy project to serve simple content
+pages around any app. With a possibility to edit pages in a simple UI as well as serve content pages
+(by requested url) as well as easily build and display navigation trees.
+
 Demo
 ----
 
@@ -75,6 +79,27 @@ By adding a Nancy bootstrapper it's possible to define the settings:
         }
     }
 
+
+Navigation sample
+-----------------
+
+Top navigation (from the sample files included)
+
+    <ul class="topnavigation">
+    @foreach(var c in documentNode.AncestorAtLevel(0).Children)
+    {
+        <li>
+            @if (documentNode.IsDescendantOrSameAs(c))
+            {
+                <a href="@c.Url" class="selected">@c.Name</a>
+            }
+            else
+            {
+                <a href="@c.Url">@c.Name</a>
+            }
+        </li>
+    }
+    </ul>
 
 
 
