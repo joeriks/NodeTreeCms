@@ -1,0 +1,33 @@
+﻿body
+{
+    width: 1000px;
+}
+.topnavigation li
+{
+    float: left;
+    margin-right: 10px;
+}
+ul.topnavigation
+{
+    width: 100%;
+    float: left;
+}
+li.selected
+{
+    background-color: Gray;
+}
+.second-navigation
+{
+    width:200px;
+    float:left;
+}
+.content
+{
+    width:770px;
+    margin-left:20px;
+    float:left;
+}
+a.selected
+{
+    background-color:#cacaca;
+}

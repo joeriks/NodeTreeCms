@@ -1,0 +1,25 @@
+﻿@using NodeTreeCms
+@{
+    var documentNode = (NodeTreeCms.Models.DocumentNode)Model;
+    Layout = "_Layout.cshtml";
+}
+
+@documentNode.BreadCrumb()
+
+@if (!documentNode.HideHeader)
+{
+    <h1>@documentNode.Name</h1> 
+}
+    
+<p>@Html.Raw(documentNode.Body)</p>
+
+<p>@Html.Raw(documentNode.ExtraContent1)</p>
+
+<p>@Html.Raw(documentNode.ExtraContent2)</p>
+    
+<hr />
+    
+<p>@Html.Raw(documentNode.ExtraContent3)</p>
+
+<p>
+Updated: @documentNode.UpdatedDateTime.ToString() By: @documentNode.Author</p>

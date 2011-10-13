@@ -1,0 +1,48 @@
+﻿@{
+    var documentNode = (NodeTreeCms.Models.DocumentNode)Model;
+}
+<style type="text/css">
+    body
+    {
+        width: 1000px;
+    }
+    .topnavigation li
+    {
+        float: left;
+        margin-right: 10px;
+    }
+    ul.topnavigation
+    {
+        width: 100%;
+        float: left;
+    }
+    li.selected
+    {
+        background-color: Gray;
+    }
+</style>
+@NodeTreeCms.HtmlTagBuilder.ChildNodes(documentNode)
+<div style="width: 300px; float: left; display: block;">
+    @NodeTreeCms.HtmlTagBuilder.ChildNodesRecursive(documentNode)
+</div>
+<div style="width: 570px; margin-left: 30px; float: left; display: block;">
+    @NodeTreeCms.HtmlTagBuilder.BreadCrumb(documentNode)
+    
+    @if (!documentNode.HideHeader)
+    {
+        <h1>@documentNode.Name</h1> 
+    }
+    
+    <p>@Html.Raw(documentNode.Body)</p>
+
+    <p>@Html.Raw(documentNode.ExtraContent1)</p>
+
+    <p>@Html.Raw(documentNode.ExtraContent2)</p>
+    
+    <hr />
+    
+    <p>@Html.Raw(documentNode.ExtraContent3)</p>
+
+    <p>
+        Updated: @documentNode.UpdatedDateTime.ToString() By: @documentNode.Author</p>
+</div>
