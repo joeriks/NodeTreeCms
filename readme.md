@@ -59,7 +59,7 @@ That's all there is to it to make it work. The module for the Admin UI is includ
 Defining settings in Nancy
 --------------------------
 
-By adding a Nancy bootstrapper it's possible to define the settings:
+By adding a Nancy bootstrapper it's possible to define the settings (otherwise it's using defaults) :
 
     public class NancyBootStrapper : DefaultNancyBootstrapper
     {
@@ -78,6 +78,7 @@ By adding a Nancy bootstrapper it's possible to define the settings:
 
         }
     }
+
 
 
 Navigation sample
