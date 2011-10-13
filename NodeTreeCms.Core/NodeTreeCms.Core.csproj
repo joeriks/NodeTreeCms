@@ -68,17 +68,17 @@
     <Compile Include="DataProviders\IDataProvider.cs" />
     <Compile Include="DataProviders\LiveDomainProvider\Commands\AddOrUpdateDocumentNode.cs" />
     <Compile Include="DataProviders\LiveDomainProvider\LiveDataProvider.cs" />
-    <Compile Include="Models\HtmlAdmin.cs" />
-    <Compile Include="Models\HtmlForm.cs" />
+    <Compile Include="Cms\HtmlAdmin.cs" />
+    <Compile Include="Cms\HtmlForm.cs" />
     <Compile Include="Models\ICms.cs" />
-    <Compile Include="Models\Cms.cs" />
+    <Compile Include="Cms\Cms.cs" />
     <Compile Include="Models\DocumentNode.cs" />
     <Compile Include="DataProviders\LiveDomainProvider\DocumentNodeModel.cs" />
-    <Compile Include="Models\HtmlBuilder.cs" />
+    <Compile Include="Cms\HtmlBuilder.cs" />
     <Compile Include="Models\IDocumentNode.cs" />
     <Compile Include="Nancy\AdminModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\DocumentNodeExtensionMethods.cs" />
+    <Compile Include="Models\IDocumentNodeExtensionMethods.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

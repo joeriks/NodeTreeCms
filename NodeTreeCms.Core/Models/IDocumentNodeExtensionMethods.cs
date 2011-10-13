@@ -5,7 +5,7 @@ using NodeTreeCms.Models;
 
 namespace NodeTreeCms.Models
 {
-    public static class DocumentNodeExtensionMethods
+    public static class IDocumentNodeExtensionMethods
     {
         public static IDocumentNode DocumentNodeByGuid(this IDocumentNode node, Guid guid)
         {
