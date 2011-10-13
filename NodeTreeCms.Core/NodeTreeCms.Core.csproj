@@ -65,17 +65,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="DataProviders\IDataProvider.cs" />
     <Compile Include="DataProviders\LiveDomainProvider\Commands\AddOrUpdateDocumentNode.cs" />
     <Compile Include="DataProviders\LiveDomainProvider\LiveDataProvider.cs" />
