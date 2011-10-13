@@ -8,12 +8,12 @@ using System.IO;
 
 namespace NodeTreeCms.DataProviders
 {
-    public class LiveDomainProvider : IDataProvider
+    public class LiveDbProvider : IDataProvider
     {
         private Engine liveDbEngine;
         private bool nodeTreeIsUpdated;
 
-        public LiveDomainProvider(string path)
+        public LiveDbProvider(string path)
         {
 
             if (Directory.Exists(path) == false)

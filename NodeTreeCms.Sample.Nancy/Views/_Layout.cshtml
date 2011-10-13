@@ -5,22 +5,22 @@
 
 <link href="/Contents/Styles/basicstyle.css" rel="stylesheet" type="text/css" />
 
-<ul class="topnavigation">
-<pre>Top navigation:</pre>
-@foreach(var c in documentNode.AncestorAtLevel(0).Children)
-{
-    <li>
-        @if (documentNode.IsDescendantOrSameAs(c))
-        {
-            <a href="@c.Url" class="selected">@c.Name</a>
-        }
-        else
-        {
-            <a href="@c.Url">@c.Name</a>
-        }
-    </li>
-}
-</ul>
+    <ul class="topnavigation">
+    <pre>Top navigation:</pre>
+    @foreach(var c in documentNode.AncestorAtLevel(0).Children)
+    {
+        <li>
+            @if (documentNode.IsDescendantOrSameAs(c))
+            {
+                <a href="@c.Url" class="selected">@c.Name</a>
+            }
+            else
+            {
+                <a href="@c.Url">@c.Name</a>
+            }
+        </li>
+    }
+    </ul>
 
 <div class="second-navigation">
 <pre>Second navigation:</pre>

@@ -74,8 +74,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NodeTreeCms\ContentModule.cs" />
-    <Compile Include="NodeTreeCms\BootStrapper.cs">
+    <Compile Include="ContentModule.cs" />
+    <Compile Include="BootStrapper.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

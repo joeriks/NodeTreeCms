@@ -89,7 +89,7 @@ namespace NodeTreeCms
             this.settings = settings;
 
             var path = settings.DbPath;
-            dbProvider = new LiveDomainProvider(path);
+            dbProvider = new LiveDbProvider(path);
 
             nodeTree = dbProvider.DocumentNode_NodeTree();
 
