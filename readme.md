@@ -1,9 +1,9 @@
 NodeTreeCms - version 0.1
 =========================
 
-Really basic CMS with the goal is to have a one dll to drop into a WebPages or Nancy project to serve simple content
-pages around any app. With a possibility to edit pages in a simple UI as well as serve content pages
-(by requested url) as well as easily build and display navigation trees.
+NodeTreeCms is a _really_ basic CMS - the goal is to have one dll to drop into any WebPages or Nancy app to add a simple
+way to handle content. With a possibility to edit content in a admin UI, serve content pages
+(by requested url) and easily build and display navigation trees.
 
 Demo
 ----
