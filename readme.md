@@ -5,6 +5,7 @@ NodeTreeCms is a _really_ basic CMS - the goal is to have one dll to drop into a
 way to handle content. With a possibility to edit content in a admin UI, serve content pages
 (by requested url) and easily build and display navigation trees.
 
+
 Demo
 ----
 
@@ -101,6 +102,35 @@ Top navigation (from the sample files included)
         </li>
     }
     </ul>
+
+
+Usage in WebPages
+-----------------
+
+The easiest ootb way is to add a "controller-like" razor file which serves the correct view this way:
+
+    @{
+      var node = nodeTreeCms.DocumentNodeByUrl(Request.Url.Path);
+    }
+    @RenderPartial(node.ViewPath, node)
+
+And then the in view use the model (document node) like this:
+
+    <h1>@Model.Name</h1>
+
+    @Html.Raw(Model.Body)
+
+
+... or simply include the code in one and the same razor file:
+
+   
+    @{
+      var node = nodeTreeCms.DocumentNodeByUrl(Request.Url.Path);
+    }
+    
+    <h1>@Model.Name</h1>
+
+    @Html.Raw(Model.Body)
 
 
 
